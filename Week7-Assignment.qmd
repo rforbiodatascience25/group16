@@ -7,6 +7,8 @@ format: html
 
 ## Group Members:
 
+Angela Garcinuno Feliciano, s254630
+
 ## Load Libraries
 
 ```{r}
@@ -17,6 +19,20 @@ library(cowplot)
 
 ## Load Data
 
+```{r}
+biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
+```
+
+```{r}
+biopsy
+```
+
 ## Data Description
 
 ## Analysis
+
+1.  Look at the data in PC coordinates.
+
+2.  Look at the rotation matrix.
+
+3.  Look at the variance explained by each PC.
