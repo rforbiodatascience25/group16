@@ -5,7 +5,27 @@ format: html
 
 # Alena
 
+```{r}
+4+5
+```
+
+hello guyssss I don't know what else to code
+
+```{r}
+340/32
+```
+
 # Magda
+
+```{r}
+i_am_hungry <- 8+9+2/4
+i_am_hungry
+```
+
+```{r}
+elo <- 2+3
+elo
+```
 
 # Natali
 
