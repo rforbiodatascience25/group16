@@ -9,7 +9,11 @@ format: html
 
 Angela Garcinuno Feliciano, s254630
 
+<<<<<<< HEAD
 Magdalena Paulina Flaszynska, s253517
+=======
+Natali Sakurako Baba Jensen, s253573
+>>>>>>> 87b16853a97bab0036111fe4d3116b70affcdcb4
 
 ## Load Libraries
 
@@ -35,8 +39,12 @@ biopsy
 
 1.  Look at the data in PC coordinates.
 
-2.  Look at the rotation matrix.
+```{r}
+pca_fit <- biopsy %>% 
+  select(where(is.numeric)) %>% # retain only numeric columns
+  prcomp(scale = TRUE) # do PCA on scaled data
 
+<<<<<<< HEAD
     ```{r}
     # extract rotation matrix
     pca_fit %>%
@@ -66,3 +74,23 @@ biopsy
     ```
 
 3.  Look at the variance explained by each PC.
+=======
+```
+
+1.  then we plot the data
+
+    ```{r}
+    pca_fit %>%
+      augment(biopsy) %>% # add original dataset back in
+      ggplot(aes(.fittedPC1, .fittedPC2, color = outcome)) + 
+      geom_point(size = 1.5) +
+      scale_color_manual(
+        values = c(malignant = "#D55E00", benign = "#0072B2")
+      ) +
+      theme_half_open(12) + background_grid()
+    ```
+
+1.  Look at the rotation matrix.
+
+2.  Look at the variance explained by each PC.
+>>>>>>> 87b16853a97bab0036111fe4d3116b70affcdcb4
