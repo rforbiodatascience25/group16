@@ -10,3 +10,17 @@ format: html
 # Natali
 
 # Angela
+
+Hello Everyone!
+
+I'm bored
+
+```{r}
+print("TIME TO SLEEEEEEEEEP (work) :)")
+```
+
+Alena is adding actual code?
+
+```{r}
+5 + 4
+```
