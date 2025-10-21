@@ -1,0 +1,22 @@
+---
+title: "Week7-Assignment"
+format: html
+---
+
+# Assignment Week 7
+
+## Group Members:
+
+## Load Libraries
+
+```{r}
+library(tidyverse)
+library(broom)
+library(cowplot)
+```
+
+## Load Data
+
+## Data Description
+
+## Analysis
