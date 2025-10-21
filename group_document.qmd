@@ -29,6 +29,8 @@ elo
 
 # Natali
 
+### New feature
+
 ```{r}
 t <- seq(0, 2*pi, length.out = 100)
 x <- 16 * sin(t)^3
