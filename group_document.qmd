@@ -17,6 +17,16 @@ hello guyssss I don't know what else to code
 
 # Magda
 
+```{r}
+i_am_hungry <- 8+9+2/4
+i_am_hungry
+```
+
+```{r}
+elo <- 2+3
+elo
+```
+
 # Natali
 
 # Angela
