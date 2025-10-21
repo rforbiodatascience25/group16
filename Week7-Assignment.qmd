@@ -15,6 +15,8 @@ Magdalena Paulina Flaszynska, s253517
 Natali Sakurako Baba Jensen, s253573
 >>>>>>> 87b16853a97bab0036111fe4d3116b70affcdcb4
 
+Alena Schwerin, s251740
+
 ## Load Libraries
 
 ```{r}
@@ -43,15 +45,17 @@ biopsy
 pca_fit <- biopsy %>% 
   select(where(is.numeric)) %>% # retain only numeric columns
   prcomp(scale = TRUE) # do PCA on scaled data
+```
 
-<<<<<<< HEAD
-    ```{r}
-    # extract rotation matrix
-    pca_fit %>%
-      tidy(matrix = "rotation")
-    ```
 
-    ```{r}
+```{r}
+# extract rotation matrix
+pca_fit %>%
+  tidy(matrix = "rotation")
+```
+
+
+```{r}
     # define arrow style for plotting
     arrow_style <- arrow(
       angle = 20, ends = "first", type = "closed", length = grid::unit(8, "pt")
@@ -74,7 +78,7 @@ pca_fit <- biopsy %>%
     ```
 
 3.  Look at the variance explained by each PC.
-=======
+
 ```
 
 1.  then we plot the data
@@ -90,7 +94,24 @@ pca_fit <- biopsy %>%
       theme_half_open(12) + background_grid()
     ```
 
-1.  Look at the rotation matrix.
+2.  Look at the rotation matrix.
 
-2.  Look at the variance explained by each PC.
->>>>>>> 87b16853a97bab0036111fe4d3116b70affcdcb4
+#### Look at the variance explained by each PC
+
+```{r}
+pca_fit |> 
+  tidy(matrix = "eigenvalues")
+```
+
+```{r}
+pca_fit |> 
+  tidy(matrix = "eigenvalues") |> 
+  ggplot(aes(PC, percent)) +
+  geom_col(fill = "#56B4E9", alpha = 0.8) +
+  scale_x_continuous(breaks = 1:9) +
+  scale_y_continuous(
+    labels = scales::percent_format(),
+    expand = expansion(mult = c(0, 0.01))
+  ) +
+  theme_minimal_hgrid(12)
+```
