@@ -7,6 +7,16 @@ format: html
 
 # Magda
 
+```{r}
+i_am_hungry <- 8+9+2/4
+i_am_hungry
+```
+
+```{r}
+elo <- 2+3
+elo
+```
+
 # Natali
 
 # Angela
