@@ -17,6 +17,13 @@ hello guyssss I don't know what else to code
 
 # Magda
 
+## new code
+
+```{r}
+abc <- 100+20+3
+abc
+```
+
 ```{r}
 i_am_hungry <- 8+9+2/4
 i_am_hungry
