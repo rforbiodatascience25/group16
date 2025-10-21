@@ -9,6 +9,8 @@ format: html
 
 Angela Garcinuno Feliciano, s254630
 
+Magdalena Paulina Flaszynska, s253517
+
 ## Load Libraries
 
 ```{r}
