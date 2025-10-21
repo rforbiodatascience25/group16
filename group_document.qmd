@@ -5,9 +5,39 @@ format: html
 
 # Alena
 
+```{r}
+4+5
+```
+
+hello guyssss I don't know what else to code
+
+```{r}
+340/32
+```
+
 # Magda
 
+```{r}
+i_am_hungry <- 8+9+2/4
+i_am_hungry
+```
+
+```{r}
+elo <- 2+3
+elo
+```
+
 # Natali
+
+```{r}
+t <- seq(0, 2*pi, length.out = 100)
+x <- 16 * sin(t)^3
+y <- 13 * cos(t) - 5 * cos(2*t) - 2 * cos(3*t) - cos(4*t)
+
+# Plot the heart shape
+plot(x, y, type = "n", asp = 1, xlab = "", ylab = "", main = "R Heart Shape") # Set up plot area
+polygon(x, y, col = "red", border = "red") # Draw and fill the polygon
+```
 
 # Angela
 
