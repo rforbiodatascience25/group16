@@ -9,6 +9,8 @@ format: html
 print("We are gonna fail")
 ```
 
+You didn't use a reasonable commit message
+
 # Alena
 
 ## New analysis
