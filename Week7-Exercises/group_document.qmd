@@ -3,11 +3,7 @@ title: "group_document"
 format: html
 ---
 
-# Marios
-
-```{r}
-
-```
+You didn't use a reasonable commit message
 
 # Alena
 
